@@ -1,0 +1,23 @@
+{
+  "name": "desafio_projeto_inicial",
+  "version": "1.0.0",
+  "description": "desafio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosynky/desafio_projeto_inicial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcosynky/desafio_projeto_inicial/issues"
+  },
+  "homepage": "https://github.com/marcosynky/desafio_projeto_inicial#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
