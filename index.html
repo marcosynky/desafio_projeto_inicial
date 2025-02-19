@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio</title>
+    
+    <!-- Link para as fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="container_conteudo">
-            <img src="./img/robot.png" alt="robot mergulhandor" class="container_image-robot" />
-            <div class="container_informacoes">
-            <img src="./img/trophy.png" alt="icone trofeu"/>
-            <div class="container_texto"></div>
+        <div class="container__conteudo">
+            <img src="./img/robot.png" alt="robot mergulhador" class="container_image-robot" />
+            <div class="container__informacoes">
+                <img src="./img/trophy.png" alt="ícone troféu" />
+                <div class="container__texto">Aqui está a sua conquista!</div>
             </div>
         </div>
-    <h1>Bem-vindo ao site!</h1>
-    <script>
-        // Interação com o usuário via prompt e alert no navegador
-        var nome = prompt('Qual seu nome?');
-        var idade = prompt('Qual sua idade?');
+        <h1>Bem-vindo ao site!</h1>
 
-        if (idade >= 18) {
-            alert('Pode tirar CNH');
-        } else {
-            alert('Não pode tirar CNH');
-        }
+        <!-- Botão para interação -->
+        <button class="container__botao" id="interagirBtn">Clique para interagir</button>
 
-        console.log('Error! Preencha todos os campos');
-    </script>
+        <script>
+            // Interação com o usuário via prompt e alert no navegador
+            document.getElementById("interagirBtn").addEventListener("click", function () {
+                var nome = prompt('Qual seu nome?');
+                var idade = prompt('Qual sua idade?');
+
+                if (idade >= 18) {
+                    alert('Pode tirar CNH');
+                } else {
+                    alert('Não pode tirar CNH');
+                }
+
+                // Exibe a mensagem na tela com base na interação
+                document.querySelector(".container__texto").innerText = `Olá, ${nome}. ${idade >= 18 ? 'Você pode tirar CNH.' : 'Você não pode tirar CNH.'}`;
+
+                console.log('Erro! Preencha todos os campos corretamente.');
+            });
+        </script>
+    </div>
 </body>
+
 </html>
