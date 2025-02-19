@@ -1,35 +1,13 @@
-
 const express = require('express');
+const path = require('path');
 const app = express();
 const port = 3000;
 
+// Servir o arquivo index.html
 app.get('/', (req, res) => {
-  res.send('Servidor iniciado!');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
-
-
-var nome = 'Lua';
-var idade = 25;
-var numeroDeVendas = 50;
-var saldoDisponivel = 1000;
-
-alert('Error!Preencha todos os campos');
-var mensagemDeErro = 'Error!Preencha todos os campos';
-alert(mensagemDeErro);
-var nome = prompt('Qual seu nome?');
-var idade = prompt('Qual sua idade?');
-
-if (idade >= 18) {
-  alert('Pode tirar CNH');
-} else {
-  alert('Não pode tirar CNH');
-}
-
-
-
-
-
