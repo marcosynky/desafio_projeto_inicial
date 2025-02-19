@@ -11,7 +11,6 @@ app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
 
-alert('Boas vindas ao nosso site!');
 
 var nome = 'Lua';
 var idade = 25;
