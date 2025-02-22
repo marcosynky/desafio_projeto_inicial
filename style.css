@@ -19,24 +19,33 @@ body {
 /* Container principal */
 .container {
     width: 600px;
-    height: 400px;
-    background-color: rgba(40, 40, 40, 0.9);
+    height: 600px;
+    background-color: rgba(90, 87, 245, 0.9);
     border-radius: 24px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    position: relative;
-    text-align: center;
+    gap: 10px;
+    margin: 20px;
     padding: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* Container para texto e botão */
+.container__texto-botao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    text-align: center;
 }
 
 /* Imagem do robô */
 .container__imagem-robo {
     width: 150px;
     height: 150px;
-    margin-bottom: 20px;
 }
 
 /* Informações */
@@ -44,10 +53,19 @@ body {
     margin-top: 20px;
 }
 
-/* Texto da conquista */
+/* Texto de boas-vindas */
+.container__boas-vindas {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .container__texto {
+    font-size: 20px;
+    font-weight: normal;
     margin-top: 20px;
-    font-size: 24px;
 }
 
 .container__texto-azul {
@@ -59,13 +77,13 @@ body {
 .container__botao {
     background-color: #1875E8;
     color: white;
-    padding: 12px 20px;
+    padding: 10px 20px;
     font-size: 20px;
     font-weight: 700;
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 50px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
