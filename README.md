@@ -22,7 +22,7 @@
 
 ![Progresso](https://img.shields.io/badge/Progresso-100%25-green?style=for-the-badge&labelColor=000000&color=008000&logo=github)
 
-> Atualmente, cerca de **100%** das funcionalidades estão implementadas.
+>Este projeto está **concluido** mas pode continua sendo aprimorado. Funcionalidades adicionais podem ser implementadas nas próximas versões.
 
 ## 📱 Funcionalidades
 
