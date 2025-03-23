@@ -24,6 +24,22 @@
 
 >Este projeto está **concluido** mas pode continua sendo aprimorado. Funcionalidades adicionais podem ser implementadas nas próximas versões.
 
+##  Autor
+<h2>Marco Antônio</h2>
+
+<p>Desenvolvedor Full-Stack </p>
+
+<p>
+  <a href="https://github.com/marcosynky" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+<a href="https://www.linkedin.com/in/marco-antônio-developer-fullstack" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+</p>
+
+
 ## 📱 Funcionalidades
 
 - O usuário pode digitar sua idade.
